@@ -1,7 +1,15 @@
 public class Radio {
     private int thisStation;
     private int soundVolume;
+    private int maxStation;
 
+    public Radio() {
+        this.maxStation = 9;
+    }
+
+    public Radio(int stationsCount) {
+        this.thisStation = stationsCount - 1;
+    }
 
     public int getStation() {
         return thisStation;
